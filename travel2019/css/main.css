@@ -1,0 +1,210 @@
+@import url("reset.css");
+*{
+	margin:0;
+	padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	font-family: "Microsoft JhengHei","Heiti TC","sans-serif";
+}
+img{
+    display: block;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #9de5e1;
+}
+header > nav{
+    display: flex;
+    align-items: center; 
+    width: 1024px;
+    height: 100px;
+    margin: 0 auto;
+}
+#logo{
+    width: 222px;
+    height: 84px;
+    float: left;
+    background-image: url("../images/logo1.png");
+    background-repeat: no-repeat;
+    background-size: 222px 84px;
+    margin-left: 15px;
+}
+header > nav > div{
+    font-size: 19px;
+    padding-left: 18px;
+    float: left;   
+}
+header > nav > div >a{
+    color: #000;
+    padding-left: 15px;
+    display: block;
+    float: left;   
+}
+/* header結束 */
+
+article{
+    position: relative;
+    width: 100%;
+    height: 595px;
+    overflow: hidden;
+    background-image: url("../images/topBG.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+article > div{
+    position: absolute;
+    width: 780px;
+    top: 50%;
+    left: 50%;
+    margin-top: 170px;
+    margin-left: -490px;
+}
+article > div > h1{
+    font-size: 74px;
+    color: #fff;
+    letter-spacing: 5px;
+    float: left;
+}
+article > div > p{
+    font-size: 34px;
+    color: #fff;
+    line-height: 100px;
+}
+
+/*article結束*/
+
+section{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #000;
+}
+section > div{
+    color: #fff;
+    width: 1024px;
+    height: 265px;
+    margin: 0 auto;
+    padding: 30px;
+}
+section > div > h1{
+    font-size: 29px;
+    padding-bottom: 19px;
+    font-weight:bold;
+}
+section > div > p{
+    font-size: 22px;
+    line-height: 32px;
+}
+/*section結束*/
+
+main{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #9de5e1;
+}
+main > div{
+    width: 1024px;
+    height: 710px;
+    margin: 0 auto;
+}
+main > div > div{
+    width: 33.3%;
+    height: 50%;
+    float: left;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+main > div > div > a >div{
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+    background-color: #fff;
+    opacity:0.8;
+    color: #000;
+}
+main > div > div > a > div > p{
+    font-size: 21px;
+    line-height: 34px;
+    padding-left: 10px;
+    font-weight:bold;
+}
+.top{
+    margin-top: 4%;
+}
+.bottom{
+    margin-top: 80%;
+}
+
+.day1{
+    background-image: url("../images/day1.jpg");
+}
+.day2{
+    background-image: url("../images/day2.jpg");
+}
+.day3{
+    background-image: url("../images/day3.jpg");
+}
+.day4{
+    background-image: url("../images/day4.jpg");
+}
+.day5{
+    background-image: url("../images/day5.jpg");
+    background-position: 80% 50%;
+}
+.day6{
+    background-image: url("../images/day6.jpg");
+}
+/*main結束*/
+
+aside{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #9de5e1;
+}
+aside > div{
+    width: 1024px;
+    height: 500px;
+    margin: 0 auto;
+}
+/*aside結束*/
+
+footer{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #62d4ce;
+}
+footer > div{
+    width: 1024px;
+    height: 63px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+}
+footer > div > div.icon{
+    float: left;
+}
+footer > div > div > a{
+    padding-right: 10px;
+}
+#FB{
+    color: #fff;
+}
+#LINE{
+    color: #fff;
+}
+footer > div > p{
+    color: #fff;
+    padding-left: 65%;
+}
