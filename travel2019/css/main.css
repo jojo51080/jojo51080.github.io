@@ -19,10 +19,9 @@ header{
     height: auto;
     overflow: hidden;
     background-color: #9de5e1;
+    
 }
 header > nav{
-    display: flex;
-    align-items: center; 
     width: 1024px;
     height: 100px;
     margin: 0 auto;
@@ -35,6 +34,7 @@ header > nav{
     background-repeat: no-repeat;
     background-size: 222px 84px;
     margin-left: 15px;
+    margin-top: 8px;
 }
 header > nav > div{
     font-size: 19px;
@@ -42,10 +42,14 @@ header > nav > div{
     float: left;   
 }
 header > nav > div >a{
+    line-height: 100px;
     color: #000;
     padding-left: 15px;
     display: block;
     float: left;   
+}
+#menubtn{
+    display: none;
 }
 /* header結束 */
 
@@ -60,7 +64,7 @@ article{
 }
 article > div{
     position: absolute;
-    width: 780px;
+    width: 1024px;
     top: 50%;
     left: 50%;
     margin-top: 170px;
@@ -135,7 +139,7 @@ main > div > div > a >div{
 main > div > div > a > div > p{
     font-size: 21px;
     line-height: 34px;
-    padding-left: 10px;
+    margin-left: 10px;
     font-weight:bold;
 }
 .top{
@@ -189,14 +193,12 @@ footer > div{
     width: 1024px;
     height: 63px;
     margin: 0 auto;
-    display: flex;
-    align-items: center; 
 }
-footer > div > div.icon{
+
+footer > div > a{
+    margin-left: 10px;
     float: left;
-}
-footer > div > div > a{
-    padding-right: 10px;
+    line-height: 72px;
 }
 #FB{
     color: #fff;
@@ -206,5 +208,130 @@ footer > div > div > a{
 }
 footer > div > p{
     color: #fff;
-    padding-left: 65%;
+    float: right;
+    line-height: 63px;
+    margin-right: 10px;
+}
+
+/*footer結束*/
+
+@media  screen and (max-width:1024px){
+    header > nav,article > div,section > div,main > div,aside > div,footer > div{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 914px){
+    #menubtn{
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-image: url("../images/menu.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        float: left;
+        margin-left: 2%;
+        margin-top: 0.5%;
+    }
+    header > nav{
+        transition: height 0.3s;
+        height: 80px;
+        overflow: hidden;
+    }
+    header > nav.open{
+        height: 460px;
+    }
+    #logo{
+        background-size: 200px 76px;
+        margin-left: 25%;
+        margin-top: 0;
+    }
+    header > nav > div{
+        font-size: 25px;
+        padding-left: 0px;
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+    header > nav > div > a{
+        line-height: 45px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+}
+@media  screen and (max-width: 786px){
+        article{
+            height: 600px;
+            background-position: 75% 10%;
+        }
+        article > div{
+            position: absolute;
+            top: 70%;
+            left: 0%;
+            margin: 0 auto;
+        }
+        article > div > h1{
+            float: none;
+            text-align:center;
+        }
+        article > div > h1.title{
+            display: none;
+        }
+        article > div > p{
+            line-height: 55px;
+            text-align:center;
+        }
+        /*article結束*/
+        section > div{
+            height: auto;
+        }
+        section > div > h1{
+            font-size: 36px;
+            text-align:center;
+        }
+        section > div > p{
+            font-size: 18px;
+            line-height: 36px;
+        }
+        /*section結束*/
+        
+        main > div{
+            height: 840px;
+            margin: 0 auto;
+            
+        }
+        main > div > div{
+            width: 100%;
+            height: 140px;
+        }
+        main > div > div > a >div{
+            height: 50px;
+        }
+        main > div > div > a > div > p{
+            line-height: 50px;
+            float: left;
+        }
+        .top{
+            margin-top: 6%;
+        }
+        .bottom{
+            margin-top: 6%;
+        }
+        /*main結束*/
+        
+        
+        footer > div{
+            height: 52px;
+        }
+        
+        footer > div > a{
+            line-height: 65px;
+        }
+        footer > div > p{
+            line-height: 52px;
+        }
+        
+        /*footer結束*/
+
 }
