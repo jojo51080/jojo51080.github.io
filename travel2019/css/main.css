@@ -219,6 +219,9 @@ footer > div > p{
     header > nav,article > div,section > div,main > div,aside > div,footer > div{
         width: 100%;
     }
+    article > div{
+        margin-left:-47%;
+    }
 }
 @media  screen and (max-width: 914px){
     #menubtn{
