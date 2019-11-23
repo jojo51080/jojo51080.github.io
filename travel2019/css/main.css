@@ -185,20 +185,23 @@ aside > div{
 
 footer{
     width: 100%;
-    height: auto;
+    height: 55px;
     overflow: hidden;
     background-color: #62d4ce;
 }
 footer > div{
     width: 1024px;
-    height: 63px;
+    height: 55px;
     margin: 0 auto;
 }
 
 footer > div > a{
     margin-left: 10px;
     float: left;
-    line-height: 72px;
+    line-height: 70px;
+}
+footer > div > a > i{
+    font-size: 40px;
 }
 #FB{
     color: #fff;
@@ -209,7 +212,7 @@ footer > div > a{
 footer > div > p{
     color: #fff;
     float: right;
-    line-height: 63px;
+    line-height: 55px;
     margin-right: 10px;
 }
 
@@ -262,15 +265,18 @@ footer > div > p{
         height: auto;
         overflow: hidden;
     }
+    article > div{
+        margin-left:-47%;
+    }
 }
 @media  screen and (max-width: 786px){
         article{
-            height: 600px;
+            height: 450px;
             background-position: 75% 10%;
         }
         article > div{
             position: absolute;
-            top: 70%;
+            top: 60%;
             left: 0%;
             margin: 0 auto;
         }
@@ -288,6 +294,7 @@ footer > div > p{
         /*article結束*/
         section > div{
             height: auto;
+            padding: 15px;
         }
         section > div > h1{
             font-size: 36px;
@@ -323,18 +330,125 @@ footer > div > p{
         }
         /*main結束*/
         
-        
+        footer{
+            height: 53px;
+}
         footer > div{
-            height: 52px;
+            height: 53px;
         }
-        
         footer > div > a{
             line-height: 65px;
         }
+        footer > div > a > i{
+            font-size: 30px;
+        }
         footer > div > p{
             line-height: 52px;
+            font-size: 14px;
         }
         
         /*footer結束*/
+
+}
+@media  screen and (max-width: 360px){
+    #menubtn{
+        width: 40px;
+        height: 40px;
+        margin-top: 2.5%;
+    }
+    header > nav{
+        height: 56px;
+    }
+    header > nav.open{
+        height: 300px;
+    }
+    #logo{
+        width: 132px;
+        height: 50px;
+        background-size: 132px 50px;
+        margin-left: 14%;
+        margin-top: 1%;
+    }
+    header > nav > div{
+        font-size: 17px;
+    }
+    header > nav > div > a{
+        line-height: 30px;
+    }
+    /*header結束*/
+
+    article{
+        height: 300px;
+        background-position: 60% 30%;
+    }
+    article > div{
+        top: 65%;
+    }
+    article > div > h1{
+        font-size: 44px;
+    }
+    article > div > p{
+        font-size: 20px;
+        line-height: 34px;
+    }
+    /*article結束*/
+
+    section > div{
+        padding: 10px;
+    }
+    section > div > h1{
+        font-size: 20px;
+    }
+    section > div > p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    /*section結束*/
+
+    main > div{
+        height: 420px;
+    }
+    main > div > div{
+        height: 70px;
+    }
+    main > div > div > a >div{
+        height: 22px;
+    }
+    main > div > div > a > div > p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .top{
+        margin-top: 7%;
+    }
+    .bottom{
+        margin-top: 7%;
+    }
+    /*main結束*/
+
+    aside > div{
+        height: 300px;
+    }
+    /*aside結束*/
+
+    footer{
+        height: 30px;
+    }
+    footer > div{
+        height: 30px;
+    }
+    footer > div > a{
+        line-height: 30px;
+    }
+    footer > div > a > i{
+        font-size: 20px;
+    }
+    footer > div > p{
+        line-height: 30px;
+        font-size: 9px;
+    }
+    
+    /*footer結束*/
+    
 
 }
