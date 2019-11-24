@@ -229,26 +229,29 @@ footer > div > p{
 @media  screen and (max-width: 914px){
     #menubtn{
         display: block;
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         background-image: url("../images/menu.png");
         background-size: cover;
         background-repeat: no-repeat;
         float: left;
-        margin-left: 2%;
-        margin-top: 0.5%;
+        margin-left: 5px;
+        margin-top: 5px;
     }
     header > nav{
         transition: height 0.3s;
-        height: 80px;
+        height: 60px;
         overflow: hidden;
+        margin: 0 auto;
     }
     header > nav.open{
-        height: 460px;
+        height: 420px;
     }
     #logo{
-        background-size: 200px 76px;
-        margin-left: 25%;
+        width: 153px;
+        height: 58px;
+        background-size: 153px 58px;
+        margin-left: 30%;
         margin-top: 0;
     }
     header > nav > div{
@@ -260,6 +263,7 @@ footer > div > p{
     }
     header > nav > div > a{
         line-height: 45px;
+        padding-left:0;
         text-align: center;
         width: 100%;
         height: auto;
@@ -350,7 +354,7 @@ footer > div > p{
         /*footer結束*/
 
 }
-@media  screen and (max-width: 360px){
+@media  screen and (max-width: 400px){
     #menubtn{
         width: 40px;
         height: 40px;
@@ -366,8 +370,11 @@ footer > div > p{
         width: 132px;
         height: 50px;
         background-size: 132px 50px;
-        margin-left: 14%;
-        margin-top: 1%;
+        
+        top: 0%;
+        margin-top: 0.5%;
+        left: 50%;
+        margin-left: 20%;
     }
     header > nav > div{
         font-size: 17px;
